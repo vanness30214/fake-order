@@ -24,7 +24,7 @@ const printStyles = `
   }
 `;
 const Receipt = ({ order,prefix,orderNum,tip }: ReceiptProps) => {
-    const totalWithTip = order.reduce((sum,n)=>sum+n.price,0)
+    const totalWithTip = order.reduce((sum,n)=>sum+n.price,0)+tip
 
     return (
         <div>
