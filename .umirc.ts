@@ -2,12 +2,12 @@ import { defineConfig } from "umi";
 
 
 export default defineConfig({
-  base:process.env.NODE_ENV==="production"?'/virtual_leave_form/':"/",
-  publicPath:process.env.NODE_ENV==="production"?'/virtual_leave_form/':"/",
+  base:process.env.NODE_ENV==="production"?'/fake-order/':"/",
+  publicPath:process.env.NODE_ENV==="production"?'/fake-order/':"/",
   routes: [
     { path: "/", component: "index" }
   ],
-  outputPath:'build/virtual_leave_form',
+  outputPath:'build/fake-order',
   npmClient: 'pnpm',
   hash:true,
   copy: [ { from: 'CNAME', to: 'build' },]
