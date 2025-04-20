@@ -1,4 +1,6 @@
 {
+  "name": "virtual_leave_form",
+  "homepage": "https://vanness30214.github.io/virtual_leave_form",
   "private": true,
   "author": "",
   "scripts": {
@@ -6,12 +8,15 @@
     "build": "umi build",
     "postinstall": "umi setup",
     "setup": "umi setup",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@ant-design/pro-components": "^2.8.7",
     "antd": "^5.24.7",
     "currency-formatter": "^1.5.9",
+    "gh-pages": "^6.3.0",
     "print-js": "^1.6.0",
     "umi": "^4.4.7"
   },
